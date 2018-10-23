@@ -28,12 +28,27 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  if(cart.length === 0){
+  let count = cart.length;
+  if(count === 0){
     return "Your shopping cart is empty.";
   }
   
   let toks = [];
-  for()
+  for(let i=0; i<count; i++){
+    let item = cart[i];
+    let name = item.itemName;
+    let price = item.itemPrice;
+    toks.push(`${name} at ${price}`);
+  }
+  
+  if(count > 1){
+    let lastTok = toks[toks.length - 1];
+    toks[toks.length - 1] = "and " + lastTok;
+  }
+  
+  let joinedToks = toks.join(", ");
+  
+  return `In your cart, you have ${joinedToks}.`;
 }
 
 function total() {
