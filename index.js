@@ -38,7 +38,7 @@ function viewCart() {
     let item = cart[i];
     let name = item.itemName;
     let price = item.itemPrice;
-    toks.push(`${name} at ${price}`);
+    toks.push(`${name} at $${price}`);
   }
   
   if(count > 1){
