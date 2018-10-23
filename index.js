@@ -64,9 +64,17 @@ function total() {
   return total;
 }
 
-function removeFromCart(item) {
+function removeFromCart(itemName) {
   // write your code here
-  let itemIndex = cart.findIndex()
+  let filteredCart = cart.filter(function(item){
+    return item.itemName != itemName;
+  });
+  
+  if(filteredCart.length === cart.length){
+    return "That item is not in your cart.";
+  }
+  
+  return filteredCart;
 }
 
 function placeOrder(cardNumber) {
