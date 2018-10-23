@@ -21,7 +21,7 @@ function addToCart(item) {
    itemPrice: randPrice()
  };
  
- cart.push(item);
+ cart.push(newItem);
 }
 
 function viewCart() {
