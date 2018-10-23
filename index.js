@@ -55,7 +55,9 @@ function viewCart() {
 
 function total() {
   // write your code here
-  
+  return cart.reduce(function(item, index, previousValue){
+    return previousValue + item.itemPrice;
+  }, 0);
 }
 
 function removeFromCart(item) {
