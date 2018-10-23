@@ -76,7 +76,7 @@ function removeFromCart(itemName) {
   
   cart = filteredCart;
   
-  return filteredCart;
+  return cart;
 }
 
 function placeOrder(cardNumber) {
