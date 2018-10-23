@@ -81,4 +81,5 @@ function removeFromCart(itemName) {
 
 function placeOrder(cardNumber) {
   // write your code here
+  
 }
