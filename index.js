@@ -38,10 +38,12 @@ function viewCart() {
     let item = cart[i];
     let name = item.itemName;
     let price = item.itemPrice;
+
     toks.push(`${name} at $${price}`);
   }
   
   if(count > 1){
+    // If multiple tokens, prepend "and" to last token
     let lastTok = toks[toks.length - 1];
     toks[toks.length - 1] = "and " + lastTok;
   }
@@ -53,6 +55,7 @@ function viewCart() {
 
 function total() {
   // write your code here
+  
 }
 
 function removeFromCart(item) {
