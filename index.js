@@ -66,7 +66,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  
+  let itemIndex = cart.findIndex()
 }
 
 function placeOrder(cardNumber) {
