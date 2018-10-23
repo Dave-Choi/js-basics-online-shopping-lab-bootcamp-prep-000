@@ -9,11 +9,16 @@ function setCart(c) {
   return cart;
 }
 
+function randPrice(){
+  // Random int between 1 and 100;
+  return Math.floor(Math.random() * 99) + 1;
+}
+
 function addToCart(item) {
  // write your code here
  let newItem = {
    itemName: item,
-   itemPrice: Math.floor(Math.random() * 100) + 1
+   itemPrice: randPrice()
  };
  
  cart.push(item);
